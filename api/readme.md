@@ -1,4 +1,4 @@
-# UB Blogging frontend part:
+# UB Blogging backend part:
 
 ## First clone the whole repository
 
@@ -14,4 +14,4 @@
 
 #### Then at the last run `npm start` in both terminals.
 
-##### Frontend is running on `<a>https://localhost:3000</a>`
+##### Frontend is running on `<a>https://localhost:5000</a>`
