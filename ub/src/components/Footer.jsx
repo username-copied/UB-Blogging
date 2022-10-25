@@ -5,36 +5,11 @@ const Footer = () => {
   return (
     <>
       <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900">
-        <div className="md:flex md:justify-between">
+        <div className="md:flex md:justify-between ">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
-              <img src={Logo} className=" h-32" alt="FlowBite Logo" />
-              {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
-              </span> */}
-            </a>
+            <img src={Logo} className=" h-32" alt="FlowBite Logo" />
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Resources
-              </h2>
-              <ul className="text-gray-600 dark:text-gray-400">
-                <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Flowbite
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    Tailwind CSS
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 ">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Follow us
@@ -42,35 +17,38 @@ const Footer = () => {
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://www.instagram.com/utkrishta.bharath.nitk/"
                     className="hover:underline "
                   >
-                    Github
+                    Instagram
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="https://twitter.com/UtkrishtaBNitk"
                     className="hover:underline"
                   >
-                    Discord
+                    Twitter
                   </a>
                 </li>
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Legal
+                Contact Us
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="#a" className="hover:underline">
-                    Privacy Policy
+                  <a
+                    href="mailto:utkrishtabharath@nitk.edu.in"
+                    className="hover:underline"
+                  >
+                    Mail Us
                   </a>
                 </li>
                 <li>
                   <a href="#a" className="hover:underline">
-                    Terms &amp; Conditions
+                    DM us on Instagram
                   </a>
                 </li>
               </ul>

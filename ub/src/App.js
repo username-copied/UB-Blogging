@@ -1,13 +1,19 @@
-// import { Navbar } from "flowbite-react";
-
 import React from "react";
 import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import TopBar from "./components/Navbar";
+import BlogPage from "./pages/BlogPage";
 
-// import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <Home />
+      <>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+
+          <Route path="/post/:postId" element={<BlogPage />} />
+        </Routes>
+      </>
     </>
   );
 }

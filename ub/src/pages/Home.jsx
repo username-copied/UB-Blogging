@@ -7,6 +7,7 @@ import "animate.css";
 import Footer from ".././components/Footer";
 import axios from "axios";
 import AllMembers from "../components/AllMembers";
+import BlogPage from "./BlogPage";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -39,6 +40,7 @@ const Home = () => {
       <Work works={works} />
       <Posts posts={posts} />
       <AllMembers />
+      {/* <BlogPage /> */}
       <Footer />
     </div>
   );
