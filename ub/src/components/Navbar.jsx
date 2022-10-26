@@ -7,6 +7,8 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import Logo from "../assets/logo.jpg";
+import { Link } from "react-router-dom";
+import Home from "../../src/pages/Home";
 
 export default function TopBar() {
   const [openNav, setOpenNav] = useState(false);
@@ -47,13 +49,11 @@ export default function TopBar() {
     <div className="m-4 p-2">
       <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900 ">
-          <Typography
-            as="a"
-            href="#"
-            className="mr-4  cursor-pointer py-1.5 font-bold"
-          >
-            <img className="h-20" src={Logo} alt="Logo " />
-          </Typography>
+          <Link to="/" element={<Home />}>
+            <Typography className="mr-4  cursor-pointer py-1.5 font-bold">
+              <img className="h-20" src={Logo} alt="Logo " />
+            </Typography>
+          </Link>
           <div className="hidden lg:block">{navList}</div>
           <Button
             variant="gradient"
